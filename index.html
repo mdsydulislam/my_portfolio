@@ -8,47 +8,103 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="top-banner">
-        <div class="first-section">
-            <h1>Welcome To</h1>
-            <h1><span class="mynameorange">Sydul Islam</span> World</h1>
-            <h3>World-Class Professional Web Developer</h3>
-            <p>As a current student in Computer Science (Software Engineering) I am passionate about using technology to solve complex problems and make a positive impact on the world. With experience in software development, I have developed a strong foundation in programming languages. As a creative problem solver and team player, I am committed to delivering high-quality work and exceeding expectations. I am eager to connect with other technology professionals and explore new opportunities for growth and development. Let's connect!</p>
-            <a class="hire_button" target="_blank" href="https://www.linkedin.com/in/sydul-islam-b0ba64216/">HIRE ME</a>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-logo">Sydul Islam</div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact Me</a>
         </div>
-        <div class="first-section">
-            <img src="images/Picsart_24-04-01_10-43-27-250 (1).png" alt="">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="content">
+            <div class="text-content">
+                <h3>Software Engineer</h3>
+                <br>
+                <h1>Hi, I am <span class="highlight">Md Sydul Islam</span></h1>
+                <h2>from Bangladesh</h2>
+                <h3>World-Class Professional Web Developer</h3>
+                <p>As a Computer Science (Software Engineering) student, I am passionate about using technology to solve complex problems. Let’s connect!</p>
+                <a class="button" target="_blank" href="https://www.linkedin.com/in/sydul-islam-b0ba64216/">HIRE ME</a>
+            </div>
+            <div class="image-content">
+                <img src="images/pic3.png" alt="Sydul Islam">
+            </div>
         </div>
     </section>
 
-    <section class="dream-area">
-        <div class="first-section">
-            <img src="images/Picsart_24-04-01_10-43-27-250 (1).png" alt="">
-        </div>
-        <div class="first-section">
-            <h2>Big Dream</h2>
-            <h3>Professional Web Developer</h3>
-            <p>As a current student in Computer Science (Software Engineering) I am passionate about using technology to solve complex problems and make a positive impact on the world. With experience in software development, I have developed a strong foundation in programming languages.</p>
-            <a class="hire_button" target="_blank" href="https://www.linkedin.com/in/sydul-islam-b0ba64216/">DOWNLOAD RESUME</a>
-        </div>
-    </section>
-
-    <section class="experience-area">
-        <h2>Experiences</h2>
-        <div id="exp1_line" class="first-section first-exp">
-            <h2>Senior Web Developer</h2>
-            <h3 class="mynameorange">2021 - present | Pro Level</h3>
-            <p>As a current student in Computer Science (Software Engineering) I am passionate about using technology to solve complex problems and make a positive impact on the world.</p>
-        </div>
-        <div id="exp2_line" class="first-section first-exp">
-            <h2>Junior Web Developer</h2>
-            <h3 class="mynameorange">2020 - 2021 | Mideum Level</h3>
-            <p>As a current student in Computer Science (Software Engineering) I am passionate about using technology to solve complex problems and make a positive impact on the world.</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="content">
+            <div class="image-content">
+                <img src="images/Picsart_24-04-01_10-43-27-250 (1).png" alt="Sydul Islam">
+            </div>
+            <div class="text-content">
+                <h2>About Me</h2>
+                <p>As a current student in Computer Science (Software Engineering) I am passionate about using technology to solve complex problems and make a positive impact on the world. With experience in software development, I have developed a strong foundation in programming languages. As a creative problem solver and team player, I am committed to delivering high-quality work and exceeding expectations. I am eager to connect with other technology professionals and explore new opportunities for growth and development. Let's connect!</p>
+            </div>
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <p>Details about your education and achievements here.</p>
+        
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <p>Descriptions of projects you have worked on.</p>
+        <div class="project-container">
+            <div class="project-box">
+                <h2>Senior Web Developer</h2>
+                <h3 class="mynameorange">2021 - present | Pro Level</h3>
+                <p>As a current student in Computer Science (Software Engineering), I am passionate about using technology to solve complex problems and make a positive impact on the world.</p>
+            </div>
+            <div class="project-box">
+                <h2>Junior Web Developer</h2>
+                <h3 class="mynameorange">2020 - 2021 | Medium Level</h3>
+                <p>As a current student in Computer Science (Software Engineering), I am passionate about using technology to solve complex problems and make a positive impact on the world.</p>
+            </div>
+            <div class="project-box">
+                <h2>Freelance Developer</h2>
+                <h3 class="mynameorange">2019 - 2020 | Entry Level</h3>
+                <p>Experience in working on various freelance projects to hone my skills and deliver effective solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Details on how to reach out.</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>@ Sydul 2024, All are secure</p>
+        <p>@ Sydul 2024, All rights reserved</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+
+        // Close the toggle menu after clicking a link
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                document.getElementById("navLinks").classList.remove("active");
+            });
+        });
+    </script>
 </body>
 </html>
