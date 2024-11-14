@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@ body {
     font-family: "PT Serif", serif;
 }
 
-/* Navbar Styles */
+
 nav {
     position: fixed;
     top: 0;
@@ -47,7 +46,7 @@ nav {
     color: white;
 }
 
-/* Toggle menu for smaller screens */
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -76,7 +75,7 @@ nav {
     }
 }
 
-/* Section Styling */
+
 .section {
     padding: 100px 5% 50px;
     min-height: 500px;
@@ -102,7 +101,7 @@ p {
     color: orange;
 }
 
-/* Content Layout */
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -133,7 +132,7 @@ p {
     width: 10%;
 }
 
-/* Button Styles */
+
 .button {
     text-decoration: none;
     background-image: linear-gradient(45deg, lightSalmon, tomato);
@@ -182,7 +181,6 @@ p {
 }
 
 
-/* Project Container */
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -207,7 +205,6 @@ p {
 }
 
 
-/* Contact Section Styling */
 .contact-details {
     display: flex;
     flex-direction: column;
@@ -229,7 +226,7 @@ p {
 
 .contact-item i {
     font-size: 22px;
-    color: #FFA726; /* Adjust to match the highlight color in your design */
+    color: #FFA726; 
 }
 
 .contact-details p, .contact-details a {
@@ -239,7 +236,7 @@ p {
 }
 
 .contact-details a {
-    color: #FFA726; /* Link color matching your theme */
+    color: #FFA726; 
     text-decoration: none;
 }
 
@@ -255,7 +252,6 @@ p {
 }
 
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -283,10 +279,13 @@ p {
     }
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 20px;
     background: #333;
-    color: #fff;
+}
+
+.footer_text{
+    color: #d8cdcd;
 }

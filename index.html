@@ -117,13 +117,19 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Sydul Islam, All rights reserved</p>
+        <p class="footer_text">&copy; 2024 Sydul Islam, All rights reserved</p>
     </footer>
 
     <script>
         function toggleMenu() {
             document.getElementById("navLinks").classList.toggle("active");
         }
+
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", () => {
+                document.getElementById("navLinks").classList.remove("active");
+            });
+        });
     </script>
 </body>
 </html>
