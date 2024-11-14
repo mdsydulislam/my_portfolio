@@ -129,6 +129,10 @@ p {
     border-radius: 45px;
 }
 
+.image-umpsa img {
+    width: 10%;
+}
+
 /* Button Styles */
 .button {
     text-decoration: none;
@@ -140,6 +144,43 @@ p {
     display: inline-block;
     margin-top: 20px;
 }
+
+
+
+#education h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.education-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.education-item p {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0;
+}
+
 
 /* Project Container */
 .project-container {
@@ -158,6 +199,62 @@ p {
     background-color: white;
 }
 
+.project-link a:link { 
+    text-decoration: none; 
+  }
+.project-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact Section Styling */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item i {
+    font-size: 22px;
+    color: #FFA726; /* Adjust to match the highlight color in your design */
+}
+
+.contact-details p, .contact-details a {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.contact-details a {
+    color: #FFA726; /* Link color matching your theme */
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.connect-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 20px;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .content {
@@ -171,6 +268,18 @@ p {
 
     .project-container {
         flex-direction: column;
+    }
+
+    #education h2 {
+        font-size: 1.8em;
+    }
+
+    .education-item h3 {
+        font-size: 1.3em;
+    }
+
+    .education-item p {
+        font-size: 0.95em;
     }
 }
 
