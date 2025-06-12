@@ -132,6 +132,10 @@ p {
     width: 10%;
 }
 
+.image-ag img {
+    width: 25%;
+}
+
 
 .button {
     text-decoration: none;
