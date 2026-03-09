@@ -1,170 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sydul Islam Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Md Sydul Islam — Software Engineer & AI Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="nav-logo">Sydul Islam</div>
-        <div class="nav-links" id="navLinks">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#education" class="nav-link">Education</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#experiences" class="nav-link">Experiences</a>
-            <a href="#contact" class="nav-link">Contact Me</a>
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="ring"></div>
+
+<nav>
+  <a href="#hero" class="nav-logo">MSI</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-orb1"></div>
+  <div class="hero-orb2"></div>
+  <div class="container hero-content">
+    <div class="hero-badge"><div class="badge-dot"></div> Available for opportunities</div>
+    <h1>
+      <span class="name">Md Sydul</span>
+      <span class="name">Islam<span class="accent-dot">.</span></span>
+    </h1>
+    <p class="hero-sub">Software Engineer & AI/ML Researcher — building intelligent systems and publishing empirical research.</p>
+    <div class="hero-cta">
+      <a href="#research" class="btn btn-primary">View Research ↗</a>
+      <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div><span class="stat-num">3+</span><span class="stat-lbl">Publications</span></div>
+      <div><span class="stat-num">3.24</span><span class="stat-lbl">CGPA / 4.00</span></div>
+      <div><span class="stat-num">2×</span><span class="stat-lbl">Dean's Award</span></div>
+      <div><span class="stat-num">5+</span><span class="stat-lbl">Languages</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="sh reveal"><span class="sh-num">01</span><h2 class="sh-title">About</h2><div class="sh-line"></div></div>
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="about-text">
+          <p>I'm a Computer Science graduate specialising in <strong>Software Engineering</strong> from Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA), with strong foundations in algorithms, statistics, and programming.</p>
+          <p>My research applies <strong>machine learning techniques</strong> to analyse computational systems — predicting algorithm performance, benchmarking across programming languages, and improving software and network efficiency.</p>
+          <p>I'm passionate about bridging empirical research with real-world software, actively seeking roles in <strong>AI/ML research and software engineering</strong>.</p>
         </div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    </nav>
+      </div>
+      <div class="reveal">
+        <div class="detail-row"><div class="d-icon">📍</div><div><span class="d-key">Location</span><span class="d-val">Chittagong, Bangladesh</span></div></div>
+        <div class="detail-row"><div class="d-icon">🎓</div><div><span class="d-key">Degree</span><span class="d-val">B.Sc. CS (Software Engineering) with Honours</span></div></div>
+        <div class="detail-row"><div class="d-icon">🔬</div><div><span class="d-key">Research Focus</span><span class="d-val">AI, ML, Algorithm Analysis, Empirical SE</span></div></div>
+        <div class="detail-row"><div class="d-icon">💼</div><div><span class="d-key">Experience</span><span class="d-val">Industrial Training — Antaragrafik Systems Sdn. Bhd.</span></div></div>
+        <div class="detail-row"><div class="d-icon">✉️</div><div><span class="d-key">Email</span><span class="d-val">mdsydulislam109@gmail.com</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Home Section -->
-    <section id="home" class="section">
-        <div class="content">
-            <div class="text-content">
-                <h1>Hi, I am <span class="highlight">Md Sydul Islam</span></h1>
-                <h2>Software Engineer from Bangladesh</h2>
-                <p>Passionate software engineer with strong problem-solving skills, particularly in mathematics and programming. Known for excellent communication and a positive, collaborative approach, I am eager to contribute to impactful projects in the IT sector, with a commitment to rapid growth and increasing responsibility.</p>
-                <!-- <a class="button" target="_blank" href="documents/myResume_sydul.pdf">View Resume</a> -->
-            </div>
-            <div class="image-content">
-                <img src="images/profile.png" alt="Sydul Islam">
-            </div>
+<!-- RESEARCH -->
+<section id="research">
+  <div class="container">
+    <div class="sh reveal"><span class="sh-num">02</span><h2 class="sh-title">Research</h2><div class="sh-line"></div></div>
+    <div class="pub-list">
+      <div class="pub-item reveal"><span class="pub-status s-published">Published</span><div><div class="pub-title">Language-Aware Sorting: Empirical and ML-Driven Performance Evaluation of Insertion Sort</div><div class="pub-meta"><strong>European Journal of Scientific Research and Reviews</strong> — 2026</div><span class="pub-role">First Author</span></div></div>
+      <div class="pub-item reveal"><span class="pub-status s-published">Published</span><div><div class="pub-title">Challenges and Opportunities of 5G Integration in Bangladesh: Impacts on Education, Research, Business, and Healthcare</div><div class="pub-meta"><strong>Journal of Computer Sciences and Informatics</strong> — 2026</div><span class="pub-role">Co-Author</span></div></div>
+      <div class="pub-item reveal"><span class="pub-status s-accepted">Accepted</span><div><div class="pub-title">Interpretable Modeling of 5G mmWave Throughput and RTT Using Contextual Features: Measurement-Driven Analysis and Deployment Guidelines</div><div class="pub-meta"><strong>2026 IEEE 2nd International Conference on Quantum Photonics, AI & Networking</strong></div><span class="pub-role">First Author</span></div></div>
+      <div class="pub-item reveal"><span class="pub-status s-accepted">Symposium</span><div><div class="pub-title">Analyzing the Impact of Data Types and Language Design on Merge Sort Execution Time</div><div class="pub-meta"><strong>IEEE CS BDC Symposium 2025</strong> — IEEE Computer Society Bangladesh Chapter, 18–19 July 2025</div><span class="pub-role">Presenter</span></div></div>
+      <div class="pub-item reveal"><span class="pub-status s-accepted">Symposium</span><div><div class="pub-title">Exploring the Algorithm-Paradigm Interface: Insertion Sort in Diverse Programming Models</div><div class="pub-meta"><strong>IEEE CS BDC Symposium 2025</strong> — IEEE Computer Society Bangladesh Chapter, 18–19 July 2025</div><span class="pub-role">Presenter</span></div></div>
+      <div class="pub-item reveal"><span class="pub-status s-review">Under Review</span><div><div class="pub-title">Cross-Language Evaluation of Sorting Algorithms on Various Input Patterns: A Comparative Study</div><div class="pub-meta"><strong>Journal of Computer Languages</strong></div><span class="pub-role">First Author</span></div></div>
+      <div class="pub-item reveal"><span class="pub-status s-review">Under Review</span><div><div class="pub-title">Cross-Language Benchmarking of Merge Sort: The Role of Data Types and Language Constructs in Execution Time</div><div class="pub-meta"><strong>Computer Applications in Engineering Education</strong></div><span class="pub-role">First Author</span></div></div>
+      <div class="pub-item reveal"><span class="pub-status s-review">Submission</span><div><div class="pub-title">Performance Analysis and Execution Time Prediction of Sorting Algorithms Across Programming Languages</div><div class="pub-meta"><strong>ECCT 2026 — International Conference on Electrical, Computer and Communication Technologies</strong></div><span class="pub-role">First Author</span></div></div>
+      <div class="pub-item reveal"><span class="pub-status s-review">Under Review</span><div><div class="pub-title">Edge-AIoT Guava Leaf Health Monitoring: Deployment-Oriented Dataset Characterization and Reproducible Baselines</div><div class="pub-meta"><strong>Internet of Things</strong></div><span class="pub-role">Co-Author</span></div></div>
+      <div class="pub-item reveal"><span class="pub-status s-review">Under Review</span><div><div class="pub-title">SPAS-AIoT: Edge-First Risk-Aware Crop Recommendation and Stage-Aware Irrigation Advisory for Bangladesh Smallholders</div><div class="pub-meta"><strong>Journal of Electrical and Computer Engineering</strong></div><span class="pub-role">Co-Author</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="sh reveal"><span class="sh-num">03</span><h2 class="sh-title">Skills</h2><div class="sh-line"></div></div>
+    <div class="skills-grid">
+      <div class="skill-card reveal"><div class="sc-icon">🧠</div><div class="sc-title">AI & Machine Learning</div><div class="tags"><span class="tag">Machine Learning</span><span class="tag">Predictive Modeling</span><span class="tag">Algorithm Analysis</span><span class="tag">Statistical Modeling</span></div></div>
+      <div class="skill-card reveal"><div class="sc-icon">💻</div><div class="sc-title">Programming</div><div class="tags"><span class="tag">Python</span><span class="tag">C</span><span class="tag">JavaScript</span><span class="tag">PHP</span></div></div>
+      <div class="skill-card reveal"><div class="sc-icon">🌐</div><div class="sc-title">Web Development</div><div class="tags"><span class="tag">React.js</span><span class="tag">HTML/CSS</span><span class="tag">MySQL</span><span class="tag">PHP</span></div></div>
+      <div class="skill-card reveal"><div class="sc-icon">📊</div><div class="sc-title">Data & Research</div><div class="tags"><span class="tag">Data Analysis</span><span class="tag">Visualization</span><span class="tag">Experimental Design</span><span class="tag">Technical Writing</span></div></div>
+      <div class="skill-card reveal"><div class="sc-icon">🛠️</div><div class="sc-title">Tools</div><div class="tags"><span class="tag">GitHub</span><span class="tag">Figma</span><span class="tag">VS Code</span></div></div>
+      <div class="skill-card reveal"><div class="sc-icon">🗂️</div><div class="sc-title">Soft Skills</div><div class="tags"><span class="tag">Project Management</span><span class="tag">Requirements Analysis</span><span class="tag">Client Coordination</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="sh reveal"><span class="sh-num">04</span><h2 class="sh-title">Projects</h2><div class="sh-line"></div></div>
+    <div class="proj-grid">
+      <div class="proj-card reveal">
+        <div class="proj-type">Final Year Project</div>
+        <div class="proj-title">Academic Course Planner System</div>
+        <p class="proj-desc">A web-based course planning system that automates timetable generation, detects scheduling conflicts, and manages course information to improve registration efficiency for students and faculty.</p>
+        <div class="proj-stack"><span class="stag">PHP</span><span class="stag">JavaScript</span><span class="stag">HTML/CSS</span><span class="stag">MySQL</span></div>
+        <div class="proj-links"><a href="http://acps.free.nf/" class="proj-link">↗ Live View</a><a href="https://github.com/mdsydulislam/fyp" class="proj-link">⌥ GitHub</a></div>
+      </div>
+      <div class="proj-card reveal">
+        <div class="proj-type">E-Commerce Project</div>
+        <div class="proj-title">Shop Islam</div>
+        <p class="proj-desc">A clean, user-friendly web-based shopping platform built with ReactJS. Users can browse and interact with products seamlessly with data persistence through local storage.</p>
+        <div class="proj-stack"><span class="stag">React.js</span><span class="stag">JavaScript</span><span class="stag">CSS</span><span class="stag">Local Storage</span></div>
+        <div class="proj-links"><a href="https://shop-islam.vercel.app/" class="proj-link">↗ Live View</a><a href="https://github.com/mdsydulislam/shop-islam" class="proj-link">⌥ GitHub</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="sh reveal"><span class="sh-num">05</span><h2 class="sh-title">Education</h2><div class="sh-line"></div></div>
+    <div class="edu-cols reveal">
+      <div>
+        <div class="timeline">
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-period">2022 — 2025</div><div class="tl-degree">B.Sc. CS (Software Engineering) with Honours</div><div class="tl-school">Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)</div><span class="tl-grade">CGPA: 3.24 / 4.00 — Second Class Upper</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-period">2017 — 2019</div><div class="tl-degree">Higher Secondary Certificate (HSC) — Science</div><div class="tl-school">BAF Shaheen College, Chattogram</div><span class="tl-grade">GPA: 4.08 / 5.00</span></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-period">2015 — 2017</div><div class="tl-degree">Secondary School Certificate (SSC) — Science</div><div class="tl-school">Chittagong Municipal Model High School</div><span class="tl-grade">GPA: 4.86 / 5.00</span></div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="skills" class="section">
-        <div class="content">
-            <div class="image-content">
-                <img src="images/profile2.png" alt="Sydul Islam">
-            </div>
-            <div class="text-content">
-                <h2>About Me</h2>
-                <p>Currently pursuing a Bachelor’s degree in Computer Science, I’m passionate about leveraging technology to solve real-world problems. I’m eager to connect with other professionals and explore new growth opportunities.</p>
-                <br>
-                <h2>Skills:</h2>
-            <div class="skills-inline">
-                <span>C</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>ReactJS</span>
-                <span>PHP</span>
-                <span>MySQL</span>
-                <span>Git & GitHub</span>
-                <span>Figma</span>
-                <span>Data Structure & Algorithms</span>
-                <span>Requirements Analysis</span>
-                <span>System Design</span>
-                <span>Project Management</span>
-            </div>
-            </div>
+      </div>
+      <div>
+        <p class="sub-head" style="margin-bottom:1rem;">Certifications</p>
+        <div class="cert-list">
+          <div class="cert-item">Aspire Leaders Program 2024 — Aspire Institute</div>
+          <div class="cert-item">CCNAv7: Introduction to Networks — Cisco</div>
+          <div class="cert-item">IoT Fundamentals: Connecting Things — Cisco</div>
+          <div class="cert-item">Introduction to AI — Coursera (IBM)</div>
+          <div class="cert-item">Microsoft Learn Transcript</div>
         </div>
-    </section>
+        <p class="sub-head" style="margin: 1.8rem 0 0.9rem;">Achievements</p>
+        <div class="ach-item">🏆 Dean's Award — FKOM, UMPSA (2023, 2025)</div>
+        <div class="ach-item">⚽ Champion — FKOM Futsal Tournament (SUKOM 2024)</div>
+        <div class="ach-item">🎭 International Fiesta 2023 Performer — UMPSA Gambang</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <h2>Education</h2>
-        <div class="image-umpsa">
-            <img src="images/umpsa.png" alt="UMPSA">
-        </div>
-        <div class="education-content">
-            <div class="education-item">
-                <h3>Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)</h3>
-                <h4>Bachelor of Computer Science (Software Engineering) with Honours</h4>
-                <p><strong>Current CGPA:</strong> 3.24</p>
-            </div>
-        </div>
-    </section>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="sh reveal"><span class="sh-num">06</span><h2 class="sh-title">Contact</h2><div class="sh-line"></div></div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <h3 class="c-tagline">Let's build something <span class="hl">impactful</span> together.</h3>
+        <p class="c-desc">I'm actively looking for research collaborations, software engineering roles, and AI/ML positions. Whether you have a project idea, a job opportunity, or just want to connect — my inbox is open.</p>
+        <a href="mailto:mdsydulislam109@gmail.com" class="btn btn-primary">Send an Email ↗</a>
+      </div>
+      <div class="c-links reveal">
+        <a href="mailto:mdsydulislam109@gmail.com" class="c-link"><span class="c-icon">✉️</span><div><span class="c-lbl">Email</span>mdsydulislam109@gmail.com</div></a>
+        <a href="https://www.linkedin.com/in/mdsydulislam" target="_blank" class="c-link"><span class="c-icon" style="font-family:sans-serif;font-weight:700;font-size:0.85rem;">in</span><div><span class="c-lbl">LinkedIn</span>linkedin.com/in/mdsydulislam</div></a>
+        <a href="https://github.com/mdsydulislam" target="_blank" class="c-link"><span class="c-icon">⌥</span><div><span class="c-lbl">GitHub</span>github.com/mdsydulislam</div></a>
+        <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AH8HC4xQbDgpAu97IF5iMQuHLQgOBpKlsAduKa8a1dN9TiB_6dRlQCIRVC9P1B7sV2hoZwpuPPMNYRnESk3EAg&user=x3j65zgAAAAJ" target="_blank" class="c-link"><span class="c-icon">🎓</span><div><span class="c-lbl">Google Scholar</span>View publications</div></a>
+        <div class="c-link"><span class="c-icon">📞</span><div><span class="c-lbl">Phone</span>+880 1638 202450</div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-box">
-                <h3>Academic Course Planner System | Final Year Project</h3><br>
-                <p>Web-based system to streamline the course registration process, enhance scheduling efficiency, and manage course data. Built using PHP, HTML, CSS, JavaScript, and MySQL in Visual Studio Code.</p> <br>
-                <p class="project-link"><a href="https://github.com/mdsydulislam/fyp">View on GitHub</a></p><br>
-                <p class="project-link"><a href="http://acps.free.nf/"> ViewLive</a></p>
-            </div>
-            <div class="project-box">
-                <h3>Shop Islam | E-Commerce Project</h3> <br>
-                <p>Web shopping platform using React.js with data persistence through local storage, designed for a seamless user experience.</p> <br>
-                <p class="project-link"><a href="https://github.com/mdsydulislam/shop-islam">View on GitHub</a></p><br>
-                <p class="project-link"><a href="https://shop-islam.vercel.app/">View Live</a></p>
-            </div>
-            <!-- <div class="project-box">
-                <h3>News Islam | API-based News Website</h3> <br>
-                <p>Interactive news website fetching real-time data from an API, built with JavaScript, HTML, and CSS.</p> <br>
-                <p class="project-link"><a href="https://github.com/mdsydulislam/news-islam">View on GitHub</a></p>
-            </div> -->
-        </div>
-    </section>
+<footer>
+  <span>© 2025 Md Sydul Islam — Chittagong, Bangladesh</span>
+  <span>Software Engineer · AI/ML Researcher</span>
+</footer>
 
-    <!-- Experiences Section -->
-    <section id="experiences" class="section">
-        <h2>Experiences</h2>
-        <div class="education-content">
-            <div class="education-item">
-                <div class="image-ag">
-                    <img src="images/ag.png" alt="AG">
-                </div>
-                <h3>Antaragrafik Systems Sdn Bhd</h3>
-                <h4>Software Development Intern</h4>
-                <p><strong>From 17th March 2025 to 29th August 2025</strong></p>
-            </div>
-        </div>
-    </section>
+<script>
+  // Custom cursor
+  const cur = document.getElementById('cur');
+  const ring = document.getElementById('ring');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cur.style.transform = `translate(${mx-6}px, ${my-6}px)`;
+  });
+  (function tick() {
+    rx += (mx - rx - 18) * 0.12;
+    ry += (my - ry - 18) * 0.12;
+    ring.style.transform = `translate(${rx}px, ${ry}px)`;
+    requestAnimationFrame(tick);
+  })();
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <div class="contact-details">
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <p>Email: <a href="mailto:mdsydulislam109@gmail.com">mdsydulislam109@gmail.com</a></p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <p>Phone: +880 1638202450</p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Location: Kuala Lumpur, Malaysia</p>
-            </div>
-            <div class="contact-item">
-                <i class="fab fa-linkedin"></i>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/sydul-islam-b0ba64216/">linkedin.com/in/sydul-islam</a></p>
-            </div>
-            <div class="contact-item">
-                <i class="fab fa-github"></i>
-                <p>GitHub: <a href="https://github.com/mdsydulislam">github.com/mdsydulislam</a></p>
-            </div>
-            <p class="connect-message">Let's Connect!</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p class="footer_text">&copy; 2025 Sydul Islam</p>
-    </footer>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("navLinks").classList.toggle("active");
-        }
-
-        document.querySelectorAll(".nav-link").forEach(link => {
-            link.addEventListener("click", () => {
-                document.getElementById("navLinks").classList.remove("active");
-            });
-        });
-    </script>
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, {threshold: 0.08});
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
 </body>
 </html>
